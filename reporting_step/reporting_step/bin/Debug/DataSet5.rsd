@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet5">
+    <Query>
+      <DataSourceReference>DataSource1</DataSourceReference>
+      <CommandText>EVALUATE SUMMARIZECOLUMNS('Dim Students'[Stud Id], 'Dim Students'[Last Name], 'Dim Students'[First Name], 'Dim Groups'[Group Name], 'Dim Groups'[Group Number], 'Dim Groups'[Group Id], 'Dim Subjects'[Subject Id], 'Dim Subjects'[Subject Name], "Mark", [Mark])</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>DAX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Students</DimensionName>
+                    <HierarchyName>Stud Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Students].[Stud Id]</HierarchyUniqueName>
+                    <LevelName>Stud Id</LevelName>
+                    <UniqueName>[Dim Students].[Stud Id].[Stud Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Stud Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Students</DimensionName>
+                    <HierarchyName>Last Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Students].[Last Name]</HierarchyUniqueName>
+                    <LevelName>Last Name</LevelName>
+                    <UniqueName>[Dim Students].[Last Name].[Last Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Last Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Students</DimensionName>
+                    <HierarchyName>First Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Students].[First Name]</HierarchyUniqueName>
+                    <LevelName>First Name</LevelName>
+                    <UniqueName>[Dim Students].[First Name].[First Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>First Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Groups</DimensionName>
+                    <HierarchyName>Group Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Groups].[Group Name]</HierarchyUniqueName>
+                    <LevelName>Group Name</LevelName>
+                    <UniqueName>[Dim Groups].[Group Name].[Group Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Group Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Groups</DimensionName>
+                    <HierarchyName>Group Number</HierarchyName>
+                    <HierarchyUniqueName>[Dim Groups].[Group Number]</HierarchyUniqueName>
+                    <LevelName>Group Number</LevelName>
+                    <UniqueName>[Dim Groups].[Group Number].[Group Number]</UniqueName>
+                  </ID>
+                  <ItemCaption>Group Number</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Groups</DimensionName>
+                    <HierarchyName>Group Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Groups].[Group Id]</HierarchyUniqueName>
+                    <LevelName>Group Id</LevelName>
+                    <UniqueName>[Dim Groups].[Group Id].[Group Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Group Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subjects</DimensionName>
+                    <HierarchyName>Subject Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subjects].[Subject Id]</HierarchyUniqueName>
+                    <LevelName>Subject Id</LevelName>
+                    <UniqueName>[Dim Subjects].[Subject Id].[Subject Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Subject Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Subjects</DimensionName>
+                    <HierarchyName>Subject Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Subjects].[Subject Name]</HierarchyUniqueName>
+                    <LevelName>Subject Name</LevelName>
+                    <UniqueName>[Dim Subjects].[Subject Name].[Subject Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Subject Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Mark</MeasureName>
+                    <UniqueName>[Measures].[Mark]</UniqueName>
+                  </ID>
+                  <ItemCaption>Mark</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Student_Management_DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement>EVALUATE SUMMARIZECOLUMNS('Dim Students'[Stud Id], 'Dim Students'[Last Name], 'Dim Students'[First Name], 'Dim Groups'[Group Name], 'Dim Groups'[Group Number], 'Dim Groups'[Group Id], 'Dim Subjects'[Subject Id], 'Dim Subjects'[Subject Name], "Mark", [Mark])</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Stud_Id">
+        <DataField>Dim Students[Stud Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Last_Name">
+        <DataField>Dim Students[Last Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="First_Name">
+        <DataField>Dim Students[First Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Group_Name">
+        <DataField>Dim Groups[Group Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Group_Number">
+        <DataField>Dim Groups[Group Number]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Group_Id">
+        <DataField>Dim Groups[Group Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Subject_Id">
+        <DataField>Dim Subjects[Subject Id]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Subject_Name">
+        <DataField>Dim Subjects[Subject Name]</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Mark">
+        <DataField>[Mark]</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
