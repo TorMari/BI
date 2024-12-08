@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="WIN-8SNIO6IEEFI.StudentManagement.user"
+  DTS:DTSID="{4FE03D1B-84F8-40C9-BABD-218C386FA7E2}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=WIN-8SNIO6IEEFI;User ID=user;Initial Catalog=StudentManagement;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-integration_step-{4FE03D1B-84F8-40C9-BABD-218C386FA7E2}WIN-8SNIO6IEEFI.StudentManagement.user;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUNye56D2M0+MwOwTYm1rSgAAAAACAAAAAAAQZgAAAAEAACAAAAAv0cf848XRGG16RsAD1qC1UYOvRFhCws2wEBiyuDr0pQAAAAAOgAAAAAIAACAAAAB0ied328VVKPDdqTiywsFrrxvzmOzJJDQlYRam22nO6HAAAABKyYsq13uoF+TXd0/9a9duYEdXmcbFOtOHYgGNFqGDxRNOU9Duy6nAeG9inR2YBp/l4xOZ2DTSyE0ZcxwdHl1uBa7gkwoo0oC1GtyJ3gnWwmuDtz1cNr6ASocQ2z3mdCAEBj8Kyb+qHhPBqXKAeuncQAAAAKtB5om0otAF7bBAdVoXaVNtzbmL94jGcLSQ6lnOFDNk9eLAoXpByF/3Q7KYX1yaXsoP50hoMoJZnrWvoMr3QEU=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
