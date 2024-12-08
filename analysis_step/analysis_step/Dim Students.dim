@@ -1,0 +1,515 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6f43c6d5-e702-497f-9cbf-bf35e1452b94" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Students</ID>
+  <Name>Dim Students</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1906" scrolltop="-5173" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7514" y="15346" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01cc00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_Students" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3662" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004e0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_Students" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1906</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5173</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7f355694-7580-4369-a4fb-f6ede1800b07">
+    <DataSourceViewID>Student_Management_DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="98815305-b92a-453c-a058-a4a351f92913">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9e2722c7-2abe-40aa-888d-bb75180acb51">
+      <ID>Stud Id</ID>
+      <Name>Stud Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="48f01969-b02d-4bd6-9e7c-333a75be7f7c">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0303d942-b48c-45d8-8dc8-58036e937643">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Stud_Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="220cfa87-1613-480f-9ef3-200f835cca18">
+          <AttributeID>Last Name</AttributeID>
+          <Name>Last Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="161fbd86-2a88-407a-ae47-5d019825af09">
+          <AttributeID>First Name</AttributeID>
+          <Name>First Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be571c31-1327-4efc-b50b-35b44b1138f2">
+          <AttributeID>Surname</AttributeID>
+          <Name>Surname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70eb34b1-ca7f-45cb-9dfc-4fd6afaef9e6">
+          <AttributeID>Studcard Number</AttributeID>
+          <Name>Studcard Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="53eba678-965e-4bcc-8bf3-04b169916141">
+          <AttributeID>Birth Year</AttributeID>
+          <Name>Birth Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ba634732-8e9d-4960-8600-07f3acc56c2e">
+          <AttributeID>Birth Place</AttributeID>
+          <Name>Birth Place</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ed4e0f62-65f2-401f-8623-d4622fbfaee8">
+          <AttributeID>Address Info</AttributeID>
+          <Name>Address Info</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a91083c8-0590-4053-a90e-e42f81360744">
+          <AttributeID>Gender</AttributeID>
+          <Name>Gender</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e7713ef5-5b36-4513-9e05-2020074775b3">
+          <AttributeID>Marital Status</AttributeID>
+          <Name>Marital Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="944e9565-98b0-450c-8d4a-0b378605e51a">
+          <AttributeID>Scholarship</AttributeID>
+          <Name>Scholarship</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8959d3d5-49ef-4edf-a543-41e97281cf77">
+          <AttributeID>Hobby</AttributeID>
+          <Name>Hobby</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dfb0e6ec-12e1-47d6-8bb4-0fe55bc5ec2d">
+          <AttributeID>Enter Date</AttributeID>
+          <Name>Enter Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="60a25231-ef12-4d52-b9e0-26a26bb56c54">
+          <AttributeID>Room Number</AttributeID>
+          <Name>Room Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6962821f-5fa9-42d2-9a3f-26bb33366510">
+          <AttributeID>Check In Date</AttributeID>
+          <Name>Check In Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c394f7f5-a9b9-4474-b883-a671da3f6acc">
+          <AttributeID>Check Out Date</AttributeID>
+          <Name>Check Out Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="67159314-41a0-4dde-acb9-c905a7c3bcad">
+          <AttributeID>Loan Book Number</AttributeID>
+          <Name>Loan Book Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1b2136eb-4ce5-4770-ba1b-1e04ffc83ba4">
+          <AttributeID>Loan Book Author</AttributeID>
+          <Name>Loan Book Author</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7723513-3624-477e-a2cd-25c71a1c4416">
+          <AttributeID>Loan Book Title</AttributeID>
+          <Name>Loan Book Title</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="10bdca2e-c9e1-4da4-8d88-0f3326494dde">
+          <AttributeID>Loan Book Price</AttributeID>
+          <Name>Loan Book Price</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="54622baf-b554-4a13-961a-dd2013a77fe4">
+          <AttributeID>Loan Date</AttributeID>
+          <Name>Loan Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="68813cb2-aadf-4769-a96e-058e518e30b3">
+          <AttributeID>Return Date</AttributeID>
+          <Name>Return Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e1c7a525-4f12-464a-aedd-e8e6c3f822d3">
+      <ID>Last Name</ID>
+      <Name>Last Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d42947bc-10cd-41d5-94dc-3daf26b84c2f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cef10e62-6fa1-49dd-a44a-3eeda2cc464a">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Last_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d5e435b-7c09-4190-a6e2-f8f0e6a17482">
+      <ID>First Name</ID>
+      <Name>First Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="79c2774f-56a1-4768-bfb9-034a2cf42265">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0afafd75-a332-4605-a19f-5f31bb7be46c">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>First_Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2efb370c-dbab-4295-ae0e-c9e2d832f063">
+      <ID>Surname</ID>
+      <Name>Surname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec1bdf34-cfe2-46cc-aa3c-af5552f15dbf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4efeddb3-73a1-43c3-994d-0a7b47e0a81d">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Surname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d924665c-d721-42f6-aebf-70dbe4da3afc">
+      <ID>Studcard Number</ID>
+      <Name>Studcard Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f202f20-9e26-45b8-814c-d4fab5f5c443">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e39e52ad-28b6-4317-a787-b5ced9a86be7">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Studcard_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8ad16f4d-3c35-438d-80a0-4ca90659dc5e">
+      <ID>Birth Year</ID>
+      <Name>Birth Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c5e7e29f-bdb4-4d5b-810b-e044f5c5300e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e863a38-7bdb-4f40-858b-1bc26dfa8095">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Birth_Year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="82ab8244-d069-4bc3-b71b-ff15d8f79a1f">
+      <ID>Birth Place</ID>
+      <Name>Birth Place</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3688bed-c322-43e7-be54-ffe871cc980c">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20d39993-d7fb-4db7-8a3f-5899ae6e59e8">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Birth_Place</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b26bb00-0102-4367-b3d2-6426661e1bfc">
+      <ID>Address Info</ID>
+      <Name>Address Info</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de9d0124-12bd-467e-ad41-9c78c7d40440">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c65d850-09ab-4844-abe9-48deafeea394">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Address_info</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abad6ea4-62e0-4541-be2e-1e805f1ccd8c">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="192495a0-2571-4f9c-a8b9-e4a35427c080">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="891770f9-182b-4799-a727-01045db12b77">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5bdd528f-5a55-4d27-b636-cdec5127b351">
+      <ID>Marital Status</ID>
+      <Name>Marital Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d4913292-e83a-46fd-b2b1-f03eeef8aa8a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e42cb046-996d-4e68-b9ad-8969a2a16d52">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Marital_Status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="662252c2-7729-4562-94b9-03a7f8c89dd6">
+      <ID>Scholarship</ID>
+      <Name>Scholarship</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b28f1dc3-e1ac-40c5-9a76-ab5441d2fb37">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32586692-a117-4deb-9e59-02caf1c558be">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Scholarship</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="da44a4e4-a0df-4b09-b32e-15ad2fc1fec2">
+      <ID>Hobby</ID>
+      <Name>Hobby</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1e3317d-f7bb-4132-a6c2-a1bf854d3edd">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="399f6e3a-965a-464e-b7b3-0fd7842b88b9">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Hobby</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ae006fb-2bd7-4730-9a80-5ff25a95089b">
+      <ID>Enter Date</ID>
+      <Name>Enter Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7e099c7-6378-45aa-bad5-28b194d5fe7d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb70531c-68eb-421f-9da7-91be9c041340">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Enter_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="576080f4-e965-4b33-9921-b4d8c26aca1d">
+      <ID>Room Number</ID>
+      <Name>Room Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="41faca97-61c0-4453-a815-d255f85381d3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c73a1946-c1cc-4ec7-a70e-8f7497773679">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Room_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d96cc480-d447-4281-bda0-5b03da1b5805">
+      <ID>Check In Date</ID>
+      <Name>Check In Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="648d9ebe-3a72-4bde-9e9f-6ef2d9bcbd8d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c07560e5-c45a-4c52-99bf-ff1746a04706">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>CheckIn_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5b29f26d-9d46-45de-98f3-44f83dbb327c">
+      <ID>Check Out Date</ID>
+      <Name>Check Out Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d3839c70-1077-4acc-8782-878e485a2125">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1faaf999-d73b-44a1-87a8-5e7b50bbd82f">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>CheckOut_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9863f88f-d8ec-4d5c-815a-0088d42c0ce2">
+      <ID>Loan Book Number</ID>
+      <Name>Loan Book Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3b3bd3f3-4ef6-4fe4-ac49-26df3e3b64f1">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="852e2e17-bea4-4fcd-aa9e-3b40eb8b422f">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>LoanBook_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="87562d36-19e1-4d81-a78b-0769d0f50ae3">
+      <ID>Loan Book Author</ID>
+      <Name>Loan Book Author</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7fa92a1e-3f8b-44e5-9ad0-73f5da6c1a73">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a42cb4a5-8a1c-41ef-befa-446616272a44">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>LoanBook_Author</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="542bc4ca-7ae3-4b80-a973-681944edb592">
+      <ID>Loan Book Title</ID>
+      <Name>Loan Book Title</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70e3faeb-5ec9-41bd-866a-2cf17c8b8f29">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43152886-f2c8-4c05-b815-037b16d8e497">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>LoanBook_Title</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d448883-092d-405a-ac44-9c68ea3145bc">
+      <ID>Loan Book Price</ID>
+      <Name>Loan Book Price</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ea5a27fe-5b01-4f5d-bd5b-06c5a4ab2fc3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="09ca6a67-72fa-4958-a0ed-ffe951833637">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>LoanBook_Price</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="032b6d2c-5579-4d06-bdf2-7807010c8e82">
+      <ID>Loan Date</ID>
+      <Name>Loan Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d42731dc-df43-481a-be81-9de0d0221d2d">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ceb5d161-5d80-4f78-863f-193af73e30ab">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Loan_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbcc22e8-401a-4b11-ac36-5ba81dbb9d37">
+      <ID>Return Date</ID>
+      <Name>Return Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46bc0ffc-df65-4319-a53d-ceadbe08ffd5">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="931703a2-3619-4c7d-9176-5de596538d54">
+            <TableID>dbo_Dim_Students</TableID>
+            <ColumnID>Return_Date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
